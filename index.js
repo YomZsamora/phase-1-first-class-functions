@@ -1,3 +1,4 @@
+
 // Receives a callback function and calls it
 function receivesAFunction(callbackFunction) { callbackFunction(); }
 
@@ -5,4 +6,9 @@ function receivesAFunction(callbackFunction) { callbackFunction(); }
 when we want to package up a function and its environment, but when we don't want to call it just yet. */
 function returnsANamedFunction() { 
 	return function namedFunction() {} 
+}
+
+// Finalised test to check for returned Anonymous Function
+function returnsAnAnonymousFunction() {
+	return function() {}
 }
